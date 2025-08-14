@@ -176,7 +176,7 @@
             color: #ffcc00;
         }
 
-        .encouragement {
+        .encorajamento {
             font-size: 14px;
             margin-bottom: 30px;
             line-height: 1.5;
@@ -186,7 +186,7 @@
 <body>
     <div class="quiz-container">
         <h1>Quiz Pokémon - Água</h1>
-        <p class="level-info">Nível 1 - Perguntas básicas sobre Pokémon do tipo Água</p>
+        <p class="level-info">Perguntas sobre: classe da Água</p>
         <img id="pokemon-icon" class="pokemon-icon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/7.png" alt="Squirtle">
         
         <div class="progress-container">
@@ -201,14 +201,14 @@
             <div id="score" class="score"></div>
         </div>
 
-   <div id="result-container" class="result-container">
-        <h2>Quiz Concluído!</h2>
-        <div id="final-score" class="final-score"></div>
-        <div id="encouragement" class="encouragement"></div>
-        <div class="nav-buttons">
-            <button onclick="window.location.href='inicial.html'" class="nav-btn">← Voltar ao Início</button>
-            <button onclick="restartQuiz()" class="nav-btn">Jogar Novamente</button>
-        </div>
+        <div id="result-container" class="result-container">
+            <h2>Quiz Concluído!</h2>
+            <div id="final-score" class="final-score"></div>
+            <div id="encouragement" class="encorajamento"></div>
+            <div class="nav-buttons">
+                <a href="inicial.html" class="nav-btn">← Voltar ao Início</a>
+                <button onclick="restartQuiz()" class="nav-btn">Jogar Novamente</button>
+            </div>
         </div>
     </div>
 
@@ -255,7 +255,7 @@
         const scoreElement = document.getElementById('score');
         const finalScoreElement = document.getElementById('final-score');
         const progressBar = document.getElementById('progress-bar');
-        const encouragementElement = document.getElementById('encouragement');
+        const encorajamentoElement = document.getElementById('encouragement');
         const pokemonIcon = document.getElementById('pokemon-icon');
 
         let currentQuestionIndex = 0;
