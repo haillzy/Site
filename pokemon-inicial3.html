@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Pokémon - Planta Nível 3</title>
+    <title>Planeta Pokémon</title>
     <style>
         body {
             font-family: 'Press Start 2P', cursive;
@@ -204,7 +204,7 @@
         <div id="result-container" class="result-container">
             <h2>Quiz Concluído!</h2>
             <div id="final-score" class="final-score"></div>
-            <div id="encouragement" class="encorajamento"></div>
+            <div id="encorajamento" class="encorajamento"></div> 
             <div class="nav-buttons">
                 <a href="inicial.html" class="nav-btn">← Voltar ao Início</a>
                 <button onclick="restartQuiz()" class="nav-btn">Jogar Novamente</button>
@@ -254,7 +254,7 @@
         const scoreElement = document.getElementById('score');
         const finalScoreElement = document.getElementById('final-score');
         const progressBar = document.getElementById('progress-bar');
-        const encouragementElement = document.getElementById('encouragement');
+        const encouragementElement = document.getElementById('encorajamento');
         const pokemonIcon = document.getElementById('pokemon-icon');
 
         let currentQuestionIndex = 0;
